@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering Education in the Age of AI: Moving Beyond the Banking Model with Freire's Problem-Posing Approach</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: "Georgia", serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .article-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Typography */
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 0.5em;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        
+        p {
+            font-size: 1.1em;
+            margin-bottom: 1.2em;
+        }
+        
+        .lead-paragraph {
+            font-size: 1.3em;
+            font-style: italic;
+            line-height: 1.4;
+            margin: 2em 0;
+            color: #555;
+        }
+        
+        .byline {
+            font-style: italic;
+            margin-bottom: 2em;
+            color: #666;
+        }
+        
+        .byline a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .byline a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Header styles */
+        .header-section {
+            width: 100%;
+            padding: 60px 0;
+            margin: 0 0 2em 0;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: 
+                radial-gradient(circle at 25px 25px, white 2%, transparent 5%),
+                radial-gradient(circle at 75px 75px, white 2%, transparent 5%);
+            background-size: 100px 100px;
+        }
+        
+        .header-content {
+            z-index: 2;
+            padding: 0 20px;
+        }
+        
+        .header-content h1 {
+            color: white;
+            margin-bottom: 0.3em;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header-content p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Pull quote */
+        .pull-quote {
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 1.3;
+            padding: 20px 0;
+            margin: 30px 0;
+            border-top: 3px solid #333;
+            border-bottom: 3px solid #333;
+            color: #333;
+        }
+        
+        .pull-quote-author {
+            font-size: 0.7em;
+            font-weight: normal;
+            display: block;
+            margin-top: 10px;
+            color: #666;
+        }
+        
+        .side-note {
+            width: 100%;
+            padding: 15px;
+            background-color: #fff9e6;
+            font-size: 0.9em;
+            margin: 20px 0;
+            color: #555;
+            border-left: 4px solid #f0c040;
+        }
+        
+        .side-note h4 {
+            margin-top: 0;
+            font-size: 1.1em;
+        }
+        
+        /* Interactive Elements */
+        .interactive-container {
+            width: 100%;
+            margin: 2em 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #eee;
+            box-sizing: border-box;
+        }
+        
+        .tab-container {
+            margin: 20px 0;
+        }
+        
+        .tab-buttons {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            flex-wrap: wrap;
+        }
+        
+        .tab-button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #f8f8f8;
+            border: none;
+            border-bottom: 3px solid transparent;
+            font-family: inherit;
+            font-size: 1em;
+            transition: all 0.2s;
+        }
+        
+        .tab-button:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .tab-button.active {
+            border-bottom: 3px solid #333;
+            font-weight: bold;
+        }
+        
+        .tab-content {
+            padding: 20px;
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .compare-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 2em 0;
+        }
+        
+        .compare-item:first-child {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9eaea;
+        }
+        
+        .compare-item:last-child {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #eaf9ea;
+        }
+        
+        .slider-container {
+            width: 100%;
+            margin: 2em 0;
+        }
+        
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .slider-title {
+            font-weight: bold;
+        }
+        
+        .slider {
+            width: 100%;
+            margin: 10px 0;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 15px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #333;
+            cursor: pointer;
+        }
+        
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #333;
+            cursor: pointer;
+        }
+        
+        .slider-description-container {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #eef6ff;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .highlight-box {
+            background-color: #e0f0ff;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 2em 0;
+        }
+        
+        .example-box {
+            background-color: #f9f9ff;
+            border: 1px solid #ccccee;
+            padding: 20px;
+            margin: 1em 0;
+            border-radius: 4px;
+        }
+        
+        .example-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        /* Dialog model visualization */
+        .dialog-container {
+            width: 100%;
+            margin: 2em 0;
+            position: relative;
+        }
+        
+        .dialog-model {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .dialog-column:first-child {
+            flex: 1;
+            min-width: 280px;
+            border: 1px solid #ccccee;
+            padding: 15px;
+            background-color: #f0f0ff;
+        }
+        
+        .dialog-column:last-child {
+            flex: 1;
+            min-width: 280px;
+            border: 1px solid #cceeff;
+            padding: 15px;
+            background-color: #f0faff;
+        }
+        
+        .dialog-column h4 {
+            text-align: center;
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        
+        .dialog-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        
+        .dialog-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #e8f4ff;
+            border-color: #0066cc;
+        }
+        
+        .dialog-box h5 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        /* Section with icons */
+        .icon-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 2em 0;
+        }
+        
+        .icon-box {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .icon-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #0066cc;
+        }
+        
+        .icon-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: 4em;
+            padding-top: 2em;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .footnotes {
+            margin-top: 2em;
+            padding-top: 1em;
+            border-top: 1px solid #ddd;
+        }
+        
+        .footnote {
+            font-size: 0.9em;
+            margin-bottom: 1em;
+            color: #666;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .pull-quote {
+                font-size: 1.3em;
+            }
+            
+            .tab-button {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+            
+            .header-section {
+                padding: 40px 0;
+            }
+        }
+        
+        /* Font Awesome style compatibility */
+        .fas, .far, .fab {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            text-align: center;
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <div class="article-container">
+        <div class="header-section">
+            <div class="header-pattern"></div>
+            <div class="header-content">
+                <h1>Empowering Education in the Age of AI</h1>
+                <p>Moving Beyond the Banking Model with Freire's Problem-Posing Approach</p>
+            </div>
+        </div>
+        
+        <div class="byline">By <a href="https://www.linkedin.com/in/christynaserrano/" target="_blank">Christyna (Dr. C) Serrano, Ph.D.</a> | Empowering the next generation of Changemakers ✨</div>
+        
+        <p class="lead-paragraph">As artificial intelligence rapidly transforms our world, Paulo Freire's revolutionary educational philosophy offers a powerful framework for fostering meaningful learning in a "cognified" era—an age in which artificial intelligence is deeply integrated into daily life, reshaping how we think, learn, and interact with the world around us, as described by Kevin Kelly in his book, <em>The Inevitable: Understanding the 12 Technological Forces That Will Shape Our Future.</em></p>
+        
+        <div class="pull-quote">
+            "Say yes to life. To it all. Participate with joy, humility, and indignation in the adventure struggle to remake the world each and every day."
+            <span class="pull-quote-author">— Paulo Freire</span>
+        </div>
+        
+        <h2><i class="fas fa-lightbulb"></i> Introduction: Freire's Vision in a Cognified World</h2>
+        
+        <p>In his seminal work, <em>Pedagogy of the Oppressed</em>, Paulo Freire introduces two contrasting educational paradigms: "Banking Education" and "Problem-Posing Education." Today, as artificial intelligence increasingly permeates educational environments, Freire's insights offer valuable guidance for fostering meaningful learning in a "cognified" era—an age in which artificial intelligence is deeply integrated into daily life, reshaping how we think, learn, and interact with the world around us, as described by Kevin Kelly in his book, <em>The Inevitable: Understanding the 12 Technological Forces That Will Shape Our Future.</em></p>
+        
+        <p>This convergence of Freirean pedagogy and modern AI technologies presents both profound challenges and transformative opportunities for education in the 21st century. The question is not whether AI will influence education, but rather how we might purposefully shape its implementation to serve genuinely liberatory educational aims.</p>
+        
+        <div class="side-note">
+            <h4><i class="fas fa-info-circle"></i> Who Was Paulo Freire?</h4>
+            <p>Paulo Freire (1921-1997) was a Brazilian educator and philosopher who is best known for his influential work, "Pedagogy of the Oppressed." His educational philosophy emphasized critical consciousness, dialogue, and transformative action for social change. Freire's work has had profound impacts on education, particularly in contexts of social and economic marginalization.</p>
+        </div>
+        
+        <div class="interactive-container">
+            <h3><i class="fas fa-th-large"></i> The Two Educational Models</h3>
+            <p>Explore the key differences between Freire's educational models and their implications for AI in education:</p>
+            
+            <div class="compare-container">
+                <div class="compare-item">
+                    <h3>Banking Education Model</h3>
+                    <ul>
+                        <li>Students are passive recipients of knowledge</li>
+                        <li>Teachers deposit information into student "accounts"</li>
+                        <li>Knowledge is treated as fixed, objective facts</li>
+                        <li>Memorization and repetition are emphasized</li>
+                        <li>Hierarchical teacher-student relationship</li>
+                        <li>Knowledge is disconnected from lived experience</li>
+                    </ul>
+                    <div class="example-box">
+                        <div class="example-title">AI Application:</div>
+                        <p>Using AI as a source of authoritative answers that students consume without question, similar to feeding facts into a human database.</p>
+                    </div>
+                </div>
+                
+                <div class="compare-item">
+                    <h3>Problem-Posing Education Model</h3>
+                    <ul>
+                        <li>Students are active co-creators of knowledge</li>
+                        <li>Teachers facilitate critical exploration</li>
+                        <li>Knowledge emerges through dialogue and investigation</li>
+                        <li>Critical questioning and reflection are emphasized</li>
+                        <li>Reciprocal teacher-student relationship</li>
+                        <li>Knowledge is connected to lived experience and social reality</li>
+                    </ul>
+                    <div class="example-box">
+                        <div class="example-title">AI Application:</div>
+                        <p>Using AI as a tool for collaborative inquiry, where students critically question AI outputs and use them as starting points for deeper investigation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2><i class="fas fa-university"></i> Banking Education and Passive AI Use</h2>
+        
+        <p>Imagine education as a bank, with students depicted as empty accounts waiting to be filled by teachers who deposit knowledge. In this scenario, students become passive recipients, expected merely to absorb, memorize, and reproduce information without questioning. Freire argues this approach is inherently dehumanizing, stifling critical thinking, creativity, and autonomy.</p>
+        
+        <p>A similar danger arises in the passive use of AI technologies. When students rely on AI-generated answers as definitive truths without critical scrutiny, they inadvertently participate in a digital form of banking education. They become passive consumers, reducing their active intellectual engagement and inadvertently surrendering their capacity for critical reflection to algorithmic outputs.</p>
+        
+        <div class="example-box" style="background-color: #ffeded; border-color: #e0a0a0;">
+            <div class="example-title">Banking Education in AI Context:</div>
+            <p>Consider a classroom where AI tools are simply banned with declarations of "that's cheating." The teacher positions themselves as the sole legitimate authority on knowledge, viewing AI as a threat rather than an opportunity for critical engagement. When students do use AI outside class, they do so secretively and uncritically, without developing the skills to evaluate its outputs. The banking model persists as students remain passive recipients of teacher-sanctioned information, while simultaneously accepting AI-generated content without question in contexts where it's available to them.</p>
+        </div>
+        
+        <p>This phenomenon manifests in various concerning practices: students submitting AI-generated essays without meaningful engagement with the content, learners accepting AI explanations without probing underlying assumptions, or educators deploying AI-powered adaptive learning systems that prioritize standardized knowledge transmission over critical inquiry. In these scenarios, AI inadvertently reinforces the very banking model that Freire critiqued as oppressive.</p>
+        
+        <div class="interactive-container">
+            <h3><i class="fas fa-sliders-h"></i> The Spectrum of AI Educational Use</h3>
+            <p>Move the slider to see how different approaches to AI in education align with Freire's educational models.</p>
+            
+            <div class="slider-container">
+                <div class="slider-header">
+                    <div class="slider-title">Banking Model</div>
+                    <div class="slider-title">Problem-Posing Model</div>
+                </div>
+                <input type="range" min="0" max="100" value="50" class="slider" id="educationModelSlider">
+                
+                <div class="slider-description-container">
+                    <div id="sliderDescription">
+                        <p><strong>Middle of the spectrum:</strong> AI is used with some critical engagement but still primarily as an information source. Students may question some outputs but generally accept AI as authoritative.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2><i class="fas fa-users"></i> Problem-Posing Education and Metacognitive AI Engagement</h2>
+        
+        <p>Conversely, Freire's alternative—the Problem-Posing model—positions students and educators as co-investigators engaging actively with real-world problems. Here, students critically explore, question, and collaboratively construct knowledge. The educator's role transforms into that of facilitator and dialogue partner rather than a mere transmitter of predetermined facts.</p>
+        
+        <div class="example-box" style="background-color: #e6ffe6; border-color: #a0e0a0;">
+            <div class="example-title">Problem-Posing Education in AI Context:</div>
+            <p>Imagine a classroom where students use AI to generate multiple perspectives on a controversial historical event. The teacher guides students in analyzing the differing AI outputs, identifying potential biases, questioning the assumptions, and developing their own critically informed understanding of the historical complexities. Students become knowledge investigators rather than knowledge recipients.</p>
+        </div>
+        
+        <p>Incorporating AI through a problem-posing approach involves coaching and metacognitive engagement. Students actively use AI as a tool for inquiry rather than a passive information source. They pose challenging questions, interrogate assumptions underlying AI responses, and critically analyze its outputs. This interaction empowers students, enhancing their critical consciousness and promoting active knowledge construction.</p>
+        
+        <div class="example-box">
+            <div class="example-title">Classroom Example:</div>
+            <p>Rather than simply accepting an AI-generated summary of a complex social issue, students might interrogate the summary's framing, identify potential biases, and use the AI as a dialogue partner to explore alternative perspectives. Similarly, a teacher might guide students to use AI to generate multiple competing analyses of historical events, then facilitate critical discussions about the strengths and limitations of each interpretation.</p>
+        </div>
+        
+        <h2><i class="fas fa-comments"></i> The Dialogical Relationship with AI</h2>
+        
+        <p>Freire emphasizes dialogue as central to liberatory education—genuine, respectful exchanges where both parties learn and grow. In his vision, authentic dialogue requires mutual trust, humility, hope, and critical thinking. How might we reimagine this dialogical relationship in contexts that include AI systems?</p>
+        
+        <p>While AI cannot truly participate in dialogue as Freire envisioned (lacking consciousness and authentic intentionality), it can function as a powerful mediating tool for human dialogical engagement. When thoughtfully integrated, AI can expand the dialogical space by introducing new perspectives, challenging human interlocutors to clarify their thinking, and making visible the gaps and connections in collective knowledge construction.</p>
+        
+        <div class="pull-quote">
+            "Knowledge emerges only through invention and re-invention, through the restless, impatient, continuing, hopeful inquiry human beings pursue in the world, with the world, and with each other."
+            <span class="pull-quote-author">— Paulo Freire</span>
+        </div>
+        
+        <p>The key lies in maintaining human agency within this expanded dialogical field. Students and educators must remain the primary meaning-makers, using AI as an extension of their inquiry rather than surrendering their epistemic authority. As Freire writes, "Knowledge emerges only through invention and re-invention, through the restless, impatient, continuing, hopeful inquiry human beings pursue in the world, with the world, and with each other."</p>
+        
+        <div class="dialog-container">
+            <h3><i class="fas fa-comments"></i> Dialogical Relationships in AI-Enhanced Education</h3>
+            <p><strong>Click on each box</strong> to see details about the role in dialogical education. Each box will open a detailed explanation dialog.</p>
+            <div class="dialog-model">
+                <div class="dialog-column">
+                    <h4>Traditional Dialogue</h4>
+                    <div class="dialog-box" id="teacher-traditional">
+                        <h5>Teacher</h5>
+                        <p>Facilitates inquiry</p>
+                    </div>
+                    <div class="dialog-box" id="student-traditional">
+                        <h5>Student</h5>
+                        <p>Actively engages</p>
+                    </div>
+                </div>
+                <div class="dialog-column">
+                    <h4>AI-Enhanced Dialogue</h4>
+                    <div class="dialog-box" id="teacher-ai">
+                        <h5>Teacher</h5>
+                        <p>Guides critical engagement with both content and AI</p>
+                    </div>
+                    <div class="dialog-box" id="ai-system">
+                        <h5>AI System</h5>
+                        <p>Provides resources, challenges, and expanded perspectives</p>
+                    </div>
+                    <div class="dialog-box" id="student-ai">
+                        <h5>Student</h5>
+                        <p>Critically engages with both human and AI interlocutors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2><i class="fas fa-sync-alt"></i> Praxis: Transformative Action in AI-Enhanced Learning Environments</h2>
+        
+        <p>Freire's concept of praxis—the integration of reflection and action upon the world to transform it—provides another vital framework for AI integration in education. In a problem-posing approach, engagement with AI should ultimately connect to meaningful praxis.</p>
+        
+        <p>This might involve students using AI to help analyze community challenges, develop potential interventions, critically evaluate proposed solutions, and refine their approaches based on ongoing reflection. Throughout this process, AI serves not merely as an information resource but as a tool for amplifying human capacity for transformative action.</p>
+        
+        <div class="side-note">
+            <h4><i class="fas fa-sync-alt"></i> What is Praxis?</h4>
+            <p>For Freire, praxis refers to the cycle of action and reflection that leads to meaningful transformation. It's not enough to simply understand the world theoretically—true education must connect to practical action to change reality, followed by reflection on that action.</p>
+        </div>
+        
+        <div class="example-box">
+            <div class="example-title">Praxis Example:</div>
+            <p>A high school environmental science class might use AI to analyze local pollution data, model potential remediation strategies, and craft evidence-based proposals for community action. The technology becomes a vehicle for praxis rather than a substitute for it.</p>
+        </div>
+        
+        <div class="interactive-container">
+            <h3><i class="fas fa-sync-alt"></i> The Cycle of Praxis in AI-Enhanced Learning</h3>
+            
+            <div class="tab-container" id="praxisCycle">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="praxis1">Reflection</button>
+                    <button class="tab-button" data-tab="praxis2">Critical Analysis</button>
+                    <button class="tab-button" data-tab="praxis3">Action Planning</button>
+                    <button class="tab-button" data-tab="praxis4">Implementation</button>
+                    <button class="tab-button" data-tab="praxis5">Evaluation</button>
+                </div>
+                
+                <div id="praxis1" class="tab-content active">
+                    <h4>Reflection</h4>
+                    <p>Students begin by reflecting on their community or world, identifying issues that matter to them. AI can help expand their awareness by providing multiple perspectives and relevant data.</p>
+                    <div class="example-box">
+                        <div class="example-title">Example:</div>
+                        <p>Students use AI to gather diverse perspectives on water quality issues in their community, including scientific, economic, and social justice dimensions.</p>
+                    </div>
+                </div>
+                
+                <div id="praxis2" class="tab-content">
+                    <h4>Critical Analysis</h4>
+                    <p>Students investigate the root causes and interconnections of the identified issues. AI assists by analyzing complex data sets and revealing patterns that might otherwise be missed.</p>
+                    <div class="example-box">
+                        <div class="example-title">Example:</div>
+                        <p>AI helps students analyze water quality data across different neighborhoods, revealing correlations with income levels and historical industrial development.</p>
+                    </div>
+                </div>
+                
+                <div id="praxis3" class="tab-content">
+                    <h4>Action Planning</h4>
+                    <p>Based on their analysis, students develop plans for intervention. AI can help evaluate different approaches and anticipate potential outcomes or challenges.</p>
+                    <div class="example-box">
+                        <div class="example-title">Example:</div>
+                        <p>Students use AI to model the potential impact of different water quality intervention strategies, considering factors like cost, implementation time, and projected outcomes.</p>
+                    </div>
+                </div>
+                
+                <div id="praxis4" class="tab-content">
+                    <h4>Implementation</h4>
+                    <p>Students put their plans into action, engaging with real-world contexts. AI can support documentation, coordination, and adaptation during this phase.</p>
+                    <div class="example-box">
+                        <div class="example-title">Example:</div>
+                        <p>During community water testing events, students use AI to process test results in real-time and adjust their outreach strategy based on emerging patterns.</p>
+                    </div>
+                </div>
+                
+                <div id="praxis5" class="tab-content">
+                    <h4>Evaluation</h4>
+                    <p>Students reflect on their actions, evaluate outcomes, and consider next steps. AI helps analyze impact data and identify areas for improvement in future cycles.</p>
+                    <div class="example-box">
+                        <div class="example-title">Example:</div>
+                        <p>AI helps students analyze community feedback, water quality changes, and policy responses to evaluate their campaign's effectiveness and plan next steps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2><i class="fas fa-chalkboard-teacher"></i> Preparing Educators for Critical AI Pedagogy</h2>
+        
+        <p>For Freire's vision to manifest in AI-enhanced educational settings, educators need specialized preparation that goes beyond technical training. They require opportunities to develop what might be called "critical AI pedagogy"—an approach that integrates technical fluency with critical consciousness about AI's implications and applications in educational contexts.</p>
+        
+        <div class="highlight-box">
+            <h4><i class="fas fa-graduation-cap"></i> Educator Preparation Considerations:</h4>
+            <p>A critical AI pedagogy requires thoughtful preparation of educators with both technical knowledge and critical educational theory. While research in this area is still emerging, educators would benefit from professional development that addresses both the practical aspects of AI systems and their social, ethical, and pedagogical implications.</p>
+        </div>
+        
+        <div class="highlight-box">
+            <h4><i class="fas fa-list-ul"></i> Key Components of Critical AI Pedagogy Preparation:</h4>
+            <ol>
+                <li><i class="fas fa-microchip"></i> Developing practical understanding of AI capabilities and limitations in educational contexts</li>
+                <li><i class="fas fa-balance-scale"></i> Exploring the ethical dimensions of AI implementation, particularly regarding equity, privacy, and autonomy</li>
+                <li><i class="fas fa-project-diagram"></i> Designing learning experiences that position AI as a tool for problem-posing rather than a mechanism for banking education</li>
+                <li><i class="fas fa-search"></i> Cultivating skills for guiding students in critical interrogation of AI-generated content</li>
+                <li><i class="fas fa-users"></i> Creating classroom cultures where AI enhances rather than diminishes human dialogue and collaboration</li>
+            </ol>
+        </div>
+        
+        <h2><i class="fas fa-hand-holding-heart"></i> Humanizing and Liberatory Potential</h2>
+        
+        <p>Problem-posing engagement with AI aligns with Freire's vision of humanizing and liberatory education. It positions students as empowered knowledge creators rather than passive consumers. Through reflective dialogues with AI, students cultivate deeper insights into social, political, and economic complexities, ultimately preparing them to engage proactively with broader societal issues.</p>
+        
+        <p>This approach recognizes that education in a cognified world must prioritize distinctly human capacities: ethical reasoning, creative problem-solving, collaborative meaning-making, and critical consciousness. By emphasizing these uniquely human domains, problem-posing education with AI can foster what philosopher Martha Nussbaum calls "capabilities"—the substantive freedoms that allow people to lead lives they have reason to value.</p>
+        
+        <div class="interactive-container">
+            <h3><i class="fas fa-chart-bar"></i> Comparing Educational Outcomes</h3>
+            <p>Compare the potential learning outcomes of different approaches to AI integration in education:</p>
+            
+            <div class="tab-container" id="outcomesTab">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="outcome1">Banking Model Outcomes</button>
+                    <button class="tab-button" data-tab="outcome2">Problem-Posing Outcomes</button>
+                </div>
+                
+                <div id="outcome1" class="tab-content active">
+                    <h4>Potential Outcomes of AI in Banking Education</h4>
+                    <ul>
+                        <li>Improved efficiency in knowledge transmission</li>
+                        <li>Higher scores on standardized assessments</li>
+                        <li>Increased dependency on technological systems</li>
+                        <li>Reduced capacity for independent critical thinking</li>
+                        <li>Diminished creative problem-solving abilities</li>
+                        <li>Potential widening of existing educational inequities</li>
+                        <li>Limited preparation for jobs requiring uniquely human capabilities</li>
+                    </ul>
+                </div>
+                
+                <div id="outcome2" class="tab-content">
+                    <h4>Potential Outcomes of AI in Problem-Posing Education</h4>
+                    <ul>
+                        <li>Enhanced critical thinking and metacognitive awareness</li>
+                        <li>Greater agency and confidence in knowledge construction</li>
+                        <li>Improved ability to evaluate information from multiple sources</li>
+                        <li>Stronger collaborative problem-solving capabilities</li>
+                        <li>Increased awareness of social, political, and ethical dimensions of knowledge</li>
+                        <li>Better preparation for navigating technological complexity</li>
+                        <li>Greater capacity to engage in transformative social action</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2><i class="fas fa-balance-scale"></i> Addressing Structural Inequities in AI-Enhanced Education</h2>
+        
+        <p>Freire's pedagogy is fundamentally concerned with exposing and challenging structural inequities. As we integrate AI into educational contexts, we must critically examine how these technologies might reproduce or amplify existing inequities in educational systems.</p>
+        
+        <p>Questions of access, representation in training data, algorithmic bias, and the political economy of educational technology all demand careful consideration through a Freirean lens. Whose knowledge is privileged in AI systems? Whose experiences are marginalized? How might AI be deployed to challenge rather than reinforce existing power structures in education?</p>
+        
+        <div class="pull-quote">
+            "The oppressed must be their own example in the struggle for their redemption."
+            <span class="pull-quote-author">— Paulo Freire</span>
+        </div>
+        
+        <p>A truly Freirean approach to AI in education would prioritize the needs and perspectives of marginalized communities, seeking to ensure that these technologies serve genuinely liberatory purposes rather than reproducing historical patterns of exclusion and oppression.</p>
+        
+        <div class="example-box">
+            <div class="example-title">Structural Equity Example:</div>
+            <p>Students might analyze the training data used in educational AI systems to identify whose voices are represented or excluded, then work collectively to advocate for more inclusive technologies. This process itself becomes an exercise in critical consciousness—helping students understand how technologies can encode and perpetuate social hierarchies.</p>
+        </div>
+        
+        <h2><i class="fas fa-rocket"></i> Conclusion: Toward a Liberatory AI Pedagogy</h2>
+        
+        <p>In a rapidly cognified world, educators have the opportunity—and responsibility—to guide students toward meaningful, empowering interactions with AI. By embracing Freire's problem-posing framework, education can leverage AI as a tool not just for information, but for profound personal and social transformation.</p>
+        
+        <p>This approach demands vigilance against the tendency to slip into new forms of banking education with sophisticated technological veneer. It requires ongoing critical reflection on how AI shapes educational experiences and relationships. Most importantly, it calls us to remember that the ultimate purpose of education, as Freire reminds us, is humanization—the ongoing process of becoming more fully human through critical engagement with the world.</p>
+        
+        <div class="icon-section">
+            <div class="icon-box">
+                <i class="fas fa-robot icon"></i>
+                <div class="icon-title">AI as Tool</div>
+                <p>AI should be positioned as a tool for inquiry rather than a source of definitive knowledge. Students should be encouraged to question, analyze, and critically evaluate AI outputs.</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-brain icon"></i>
+                <div class="icon-title">Critical Thinking</div>
+                <p>Problem-posing education with AI cultivates deeper metacognitive skills and critical thinking, helping students evaluate information from multiple sources.</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-users icon"></i>
+                <div class="icon-title">Collaborative Learning</div>
+                <p>AI should enhance rather than replace human dialogue, supporting collaborative knowledge construction between teachers and students.</p>
+            </div>
+        </div>
+        
+        <p>By thoughtfully integrating AI within a problem-posing framework, we can work toward an educational future that embraces technological advancement while remaining firmly grounded in the humanistic values at the heart of truly liberatory education.</p>
+        
+        <div class="highlight-box">
+            <h4><i class="fas fa-star"></i> Key Takeaways:</h4>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> AI can either reinforce the passive "banking model" of education or support a more active, critical "problem-posing" approach</li>
+                <li><i class="fas fa-check-circle"></i> Students should be encouraged to question and critically engage with AI outputs rather than treating them as authoritative knowledge</li>
+                <li><i class="fas fa-check-circle"></i> AI's role in education should be to enhance human dialogue and collaborative inquiry, not replace it</li>
+                <li><i class="fas fa-check-circle"></i> Educators need specialized preparation to develop "critical AI pedagogy" approaches</li>
+                <li><i class="fas fa-check-circle"></i> The integration of AI in education should prioritize the development of uniquely human capacities: ethical reasoning, creative problem-solving, and critical consciousness</li>
+                <li><i class="fas fa-check-circle"></i> A Freirean approach to AI in education must address questions of equity, access, and representation</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 Dr. Christyna Serrano. All rights reserved.</p>
+            <p>For more information on critical AI pedagogy, please contact: <a href="mailto:christynaserrano@berkeley.edu">christynaserrano@berkeley.edu</a></p>
+            
+            <div class="footnotes">
+                <h3>References</h3>
+                <div class="footnote">
+                    <p>Freire, P. (1970). <em>Pedagogy of the Oppressed</em>. New York: Herder and Herder.</p>
+                </div>
+                <div class="footnote">
+                    <p>Kelly, K. (2016). <em>The Inevitable: Understanding the 12 Technological Forces That Will Shape Our Future</em>. New York: Viking.</p>
+                </div>
+                <div class="footnote">
+                    <p>Nussbaum, M. (2011). <em>Creating Capabilities: The Human Development Approach</em>. Cambridge, MA: Harvard University Press.</p>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            // Slider functionality
+            const slider = document.getElementById('educationModelSlider');
+            const sliderDescription = document.getElementById('sliderDescription');
+            
+            slider.addEventListener('input', function() {
+                const value = this.value;
+                let description = '';
+                
+                if (value < 25) {
+                    description = '<p><strong>Banking model dominant:</strong> AI is used primarily as an authoritative source of information. Students accept AI outputs without questioning, and teachers use AI primarily to deliver standardized content efficiently.</p>';
+                } else if (value < 50) {
+                    description = '<p><strong>Banking model leaning:</strong> AI is used mainly as an information source with limited questioning. Teachers may encourage some reflection on AI outputs, but the focus remains on knowledge acquisition.</p>';
+                } else if (value < 75) {
+                    description = '<p><strong>Problem-posing leaning:</strong> AI is used with significant critical engagement. Students regularly question AI outputs and use them as starting points for investigation rather than endpoints.</p>';
+                } else {
+                    description = '<p><strong>Problem-posing dominant:</strong> AI is fully integrated as a tool for collaborative inquiry. Students and teachers engage in deep critical analysis of AI outputs, actively identifying biases and limitations while using AI to support their own knowledge creation.</p>';
+                }
+                
+                sliderDescription.innerHTML = description;
+            });
+            
+            // Tab functionality
+            function setupTabs(containerId) {
+                const container = document.getElementById(containerId);
+                if (!container) return;
+                
+                const buttons = container.querySelectorAll('.tab-button');
+                const contents = container.querySelectorAll('.tab-content');
+                
+                buttons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        const tabId = this.getAttribute('data-tab');
+                        
+                        // Deactivate all buttons and contents
+                        buttons.forEach(btn => btn.classList.remove('active'));
+                        contents.forEach(content => content.classList.remove('active'));
+                        
+                        // Activate selected button and content
+                        this.classList.add('active');
+                        document.getElementById(tabId).classList.add('active');
+                    });
+                });
+            }
+            
+            // Dialog boxes functionality
+            const dialogBoxes = document.querySelectorAll('.dialog-box');
+            dialogBoxes.forEach(box => {
+                box.addEventListener('click', function() {
+                    const boxId = this.id;
+                    let detailContent = '';
+                    
+                    switch(boxId) {
+                        case 'teacher-traditional':
+                            detailContent = "In traditional Freirean dialogue, the teacher's role is to pose problems, guide inquiry, and participate as a co-learner rather than an authority figure. The teacher creates conditions for authentic dialogue where students develop critical consciousness.";
+                            break;
+                        case 'student-traditional':
+                            detailContent = "Students in Freirean dialogue actively engage with problems, share their experiences and perspectives, and collaborate in knowledge construction. They develop agency through critically questioning and reflecting on their world.";
+                            break;
+                        case 'teacher-ai':
+                            detailContent = "In AI-enhanced learning environments, the teacher guides students not only in subject matter but in critical engagement with AI tools. They help students navigate the strengths and limitations of AI outputs, identifying bias and evaluating AI-generated information.";
+                            break;
+                        case 'ai-system':
+                            detailContent = "AI systems serve as tools that can provide informational resources, generate multiple perspectives, and challenge human thinking. Unlike human dialogue partners, AI lacks intentionality but can still support dialogical learning when critically approached.";
+                            break;
+                        case 'student-ai':
+                            detailContent = "Students in AI-enhanced environments learn to engage critically with both human and AI interlocutors. They develop metacognitive skills for evaluating AI outputs, questioning assumptions, and using AI as a tool for deeper inquiry rather than a source of definitive answers.";
+                            break;
+                    }
+                    
+                    // Create modal element
+                    const modal = document.createElement('div');
+                    modal.style.position = 'fixed';
+                    modal.style.top = '0';
+                    modal.style.left = '0';
+                    modal.style.width = '100%';
+                    modal.style.height = '100%';
+                    modal.style.backgroundColor = 'rgba(0,0,0,0.7)';
+                    modal.style.display = 'flex';
+                    modal.style.justifyContent = 'center';
+                    modal.style.alignItems = 'center';
+                    modal.style.zIndex = '1000';
+                    
+                    // Create content box
+                    const contentBox = document.createElement('div');
+                    contentBox.style.backgroundColor = 'white';
+                    contentBox.style.padding = '20px';
+                    contentBox.style.borderRadius = '5px';
+                    contentBox.style.maxWidth = '600px';
+                    contentBox.style.position = 'relative';
+                    
+                    // Add close button
+                    const closeBtn = document.createElement('button');
+                    closeBtn.textContent = 'Close';
+                    closeBtn.style.position = 'absolute';
+                    closeBtn.style.top = '10px';
+                    closeBtn.style.right = '10px';
+                    closeBtn.style.padding = '5px 10px';
+                    closeBtn.style.border = 'none';
+                    closeBtn.style.backgroundColor = '#333';
+                    closeBtn.style.color = 'white';
+                    closeBtn.style.borderRadius = '3px';
+                    closeBtn.style.cursor = 'pointer';
+                    
+                    // Add content
+                    const content = document.createElement('div');
+                    content.innerHTML = `<h3>${this.querySelector('h5').textContent}</h3><p>${detailContent}</p>`;
+                    
+                    // Assemble modal
+                    contentBox.appendChild(closeBtn);
+                    contentBox.appendChild(content);
+                    modal.appendChild(contentBox);
+                    document.body.appendChild(modal);
+                    
+                    // Close modal when button is clicked
+                    closeBtn.addEventListener('click', function() {
+                        document.body.removeChild(modal);
+                    });
+                    
+                    // Close modal when clicking outside content box
+                    modal.addEventListener('click', function(e) {
+                        if (e.target === modal) {
+                            document.body.removeChild(modal);
+                        }
+                    });
+                });
+            });
+            
+            // Set up all tab containers
+            document.addEventListener('DOMContentLoaded', function() {
+                setupTabs('praxisCycle');
+                setupTabs('outcomesTab');
+            });
+        </script>
+    </div>
+</body>
+</html>
